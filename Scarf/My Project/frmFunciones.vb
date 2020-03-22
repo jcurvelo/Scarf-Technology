@@ -19,4 +19,9 @@ Public Class frmFunciones
             Return False
         End Try
     End Function
+
+    Public Function fSetVisible(item)
+        item.Visible = True
+        Return True
+    End Function
 End Class

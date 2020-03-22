@@ -49,4 +49,8 @@ Public Class frmLogin
     Private Sub UsernameLabel_Click(sender As Object, e As EventArgs) Handles UsernameLabel.Click
 
     End Sub
+
+    Private Sub LogoPictureBox_Click(sender As Object, e As EventArgs) Handles LogoPictureBox.Click
+
+    End Sub
 End Class
