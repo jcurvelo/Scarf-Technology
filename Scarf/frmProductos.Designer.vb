@@ -29,11 +29,11 @@ Partial Class frmProductos
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnConsultActu = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnConsultElim = New System.Windows.Forms.Button()
         Me.btnRegresar = New System.Windows.Forms.Button()
-        Me.btnGrabar = New System.Windows.Forms.Button()
+        Me.btnConsultGrab = New System.Windows.Forms.Button()
         Me.lblMaximo = New System.Windows.Forms.Label()
         Me.lblMinimo = New System.Windows.Forms.Label()
         Me.lblActual = New System.Windows.Forms.Label()
@@ -51,35 +51,35 @@ Partial Class frmProductos
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(441, 131)
+        Me.TextBox6.Location = New System.Drawing.Point(452, 183)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 20)
         Me.TextBox6.TabIndex = 102
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(171, 158)
+        Me.TextBox5.Location = New System.Drawing.Point(171, 180)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
         Me.TextBox5.TabIndex = 101
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(171, 186)
+        Me.TextBox4.Location = New System.Drawing.Point(171, 208)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 100
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(171, 238)
+        Me.TextBox3.Location = New System.Drawing.Point(171, 260)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 99
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(171, 212)
+        Me.TextBox2.Location = New System.Drawing.Point(171, 234)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 98
@@ -102,39 +102,39 @@ Partial Class frmProductos
         Me.Label3.TabIndex = 96
         Me.Label3.Text = "Consulta Producto"
         '
-        'Button3
+        'btnConsultActu
         '
-        Me.Button3.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(111, 305)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(142, 40)
-        Me.Button3.TabIndex = 95
-        Me.Button3.Text = "Actualizar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnConsultActu.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnConsultActu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultActu.Location = New System.Drawing.Point(26, 355)
+        Me.btnConsultActu.Name = "btnConsultActu"
+        Me.btnConsultActu.Size = New System.Drawing.Size(142, 40)
+        Me.btnConsultActu.TabIndex = 95
+        Me.btnConsultActu.Text = "Actualizar"
+        Me.btnConsultActu.UseVisualStyleBackColor = False
         '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.YellowGreen
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(564, 131)
+        Me.Button2.Location = New System.Drawing.Point(277, 115)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(104, 40)
         Me.Button2.TabIndex = 94
         Me.Button2.Text = "Consultar"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnConsultElim
         '
-        Me.Button1.BackColor = System.Drawing.Color.Crimson
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(441, 305)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 40)
-        Me.Button1.TabIndex = 93
-        Me.Button1.Text = "Eliminar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnConsultElim.BackColor = System.Drawing.Color.Crimson
+        Me.btnConsultElim.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultElim.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnConsultElim.Location = New System.Drawing.Point(356, 355)
+        Me.btnConsultElim.Name = "btnConsultElim"
+        Me.btnConsultElim.Size = New System.Drawing.Size(143, 40)
+        Me.btnConsultElim.TabIndex = 93
+        Me.btnConsultElim.Text = "Eliminar"
+        Me.btnConsultElim.UseVisualStyleBackColor = False
         '
         'btnRegresar
         '
@@ -145,23 +145,23 @@ Partial Class frmProductos
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
-        'btnGrabar
+        'btnConsultGrab
         '
-        Me.btnGrabar.BackColor = System.Drawing.Color.Gold
-        Me.btnGrabar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGrabar.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnGrabar.Location = New System.Drawing.Point(270, 305)
-        Me.btnGrabar.Name = "btnGrabar"
-        Me.btnGrabar.Size = New System.Drawing.Size(154, 40)
-        Me.btnGrabar.TabIndex = 91
-        Me.btnGrabar.Text = "Grabar"
-        Me.btnGrabar.UseVisualStyleBackColor = False
+        Me.btnConsultGrab.BackColor = System.Drawing.Color.Gold
+        Me.btnConsultGrab.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultGrab.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnConsultGrab.Location = New System.Drawing.Point(185, 355)
+        Me.btnConsultGrab.Name = "btnConsultGrab"
+        Me.btnConsultGrab.Size = New System.Drawing.Size(154, 40)
+        Me.btnConsultGrab.TabIndex = 91
+        Me.btnConsultGrab.Text = "Grabar"
+        Me.btnConsultGrab.UseVisualStyleBackColor = False
         '
         'lblMaximo
         '
         Me.lblMaximo.AutoSize = True
         Me.lblMaximo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMaximo.Location = New System.Drawing.Point(323, 131)
+        Me.lblMaximo.Location = New System.Drawing.Point(334, 183)
         Me.lblMaximo.Name = "lblMaximo"
         Me.lblMaximo.Size = New System.Drawing.Size(112, 20)
         Me.lblMaximo.TabIndex = 90
@@ -171,7 +171,7 @@ Partial Class frmProductos
         '
         Me.lblMinimo.AutoSize = True
         Me.lblMinimo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMinimo.Location = New System.Drawing.Point(56, 241)
+        Me.lblMinimo.Location = New System.Drawing.Point(56, 263)
         Me.lblMinimo.Name = "lblMinimo"
         Me.lblMinimo.Size = New System.Drawing.Size(108, 20)
         Me.lblMinimo.TabIndex = 89
@@ -181,7 +181,7 @@ Partial Class frmProductos
         '
         Me.lblActual.AutoSize = True
         Me.lblActual.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblActual.Location = New System.Drawing.Point(31, 212)
+        Me.lblActual.Location = New System.Drawing.Point(31, 234)
         Me.lblActual.Name = "lblActual"
         Me.lblActual.Size = New System.Drawing.Size(134, 20)
         Me.lblActual.TabIndex = 88
@@ -191,7 +191,7 @@ Partial Class frmProductos
         '
         Me.lblPrecio.AutoSize = True
         Me.lblPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio.Location = New System.Drawing.Point(107, 184)
+        Me.lblPrecio.Location = New System.Drawing.Point(107, 206)
         Me.lblPrecio.Name = "lblPrecio"
         Me.lblPrecio.Size = New System.Drawing.Size(57, 20)
         Me.lblPrecio.TabIndex = 87
@@ -201,7 +201,7 @@ Partial Class frmProductos
         '
         Me.lblDescripcion.AutoSize = True
         Me.lblDescripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescripcion.Location = New System.Drawing.Point(72, 156)
+        Me.lblDescripcion.Location = New System.Drawing.Point(72, 178)
         Me.lblDescripcion.Name = "lblDescripcion"
         Me.lblDescripcion.Size = New System.Drawing.Size(96, 20)
         Me.lblDescripcion.TabIndex = 86
@@ -219,21 +219,21 @@ Partial Class frmProductos
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(442, 211)
+        Me.TextBox7.Location = New System.Drawing.Point(453, 263)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 109
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(442, 185)
+        Me.TextBox8.Location = New System.Drawing.Point(453, 237)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(100, 20)
         Me.TextBox8.TabIndex = 108
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(442, 159)
+        Me.TextBox9.Location = New System.Drawing.Point(453, 211)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(100, 20)
         Me.TextBox9.TabIndex = 107
@@ -242,7 +242,7 @@ Partial Class frmProductos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(275, 209)
+        Me.Label2.Location = New System.Drawing.Point(286, 261)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(160, 20)
         Me.Label2.TabIndex = 106
@@ -252,7 +252,7 @@ Partial Class frmProductos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(377, 183)
+        Me.Label4.Location = New System.Drawing.Point(388, 235)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 20)
         Me.Label4.TabIndex = 105
@@ -262,7 +262,7 @@ Partial Class frmProductos
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(291, 159)
+        Me.Label5.Location = New System.Drawing.Point(302, 211)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(144, 20)
         Me.Label5.TabIndex = 104
@@ -297,11 +297,11 @@ Partial Class frmProductos
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnConsultActu)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConsultElim)
         Me.Controls.Add(Me.btnRegresar)
-        Me.Controls.Add(Me.btnGrabar)
+        Me.Controls.Add(Me.btnConsultGrab)
         Me.Controls.Add(Me.lblMaximo)
         Me.Controls.Add(Me.lblMinimo)
         Me.Controls.Add(Me.lblActual)
@@ -321,11 +321,11 @@ Partial Class frmProductos
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnConsultActu As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnConsultElim As System.Windows.Forms.Button
     Friend WithEvents btnRegresar As System.Windows.Forms.Button
-    Friend WithEvents btnGrabar As System.Windows.Forms.Button
+    Friend WithEvents btnConsultGrab As System.Windows.Forms.Button
     Friend WithEvents lblMaximo As System.Windows.Forms.Label
     Friend WithEvents lblMinimo As System.Windows.Forms.Label
     Friend WithEvents lblActual As System.Windows.Forms.Label

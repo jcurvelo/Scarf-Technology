@@ -89,7 +89,7 @@ Partial Class frmLogin
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
-        Me.OK.Text = "&Aceptar"
+        Me.OK.Text = "Ingresar"
         '
         'Cancel
         '
@@ -98,7 +98,7 @@ Partial Class frmLogin
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
-        Me.Cancel.Text = "&Cancelar"
+        Me.Cancel.Text = "Salir"
         '
         'frmLogin
         '
