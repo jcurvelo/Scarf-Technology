@@ -1,56 +1,53 @@
-Imports MySql.Data.MySqlClient
+Imports MySql.Data.MySqlClient '<-EL AMIGUITO DE SIEMPRE
 
 Public Class frmLogin
+    'HACE CLICK EN INGRESAR
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        fConexionBD.fConexionBD()
+        fConexionBD.fConexionBD() 'LLAMAMOS LA CONEXION
 
-        Try
+        Try 'INTENTAMOS...
+
+            'EL SQL QUE NECESITAMOS. LLAMAMOS DE UNA VEZ AL USUARIO Y SU CONTRASEÑA
             sSqlLogin = "SELECT * FROM acceso WHERE login_acceso='" & txtUsuario.Text & "' AND clave_acceso='" & txtClave.Text & "';"
+
+            'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHH
             cmdLogin = New MySqlCommand
             cmdLogin.Connection = fConexionBD.sConexionBD
             cmdLogin.CommandText = sSqlLogin
             cmdLogin.CommandType = CommandType.Text
 
+            'LLAMAMOS AL EJECUTOR DE LA LECTURA. SAAASH, WAAAASH, PLINK *SONIDOS DE ESPADA MATANDO UN LIBRO*
             idrConsultaSqlLogin = cmdLogin.ExecuteReader()
-            Dim iNroRegistos As Integer = idrConsultaSqlLogin.RecordsAffected
-            While idrConsultaSqlLogin.Read()
-                'Se realiza la consulta y se asigna los resultados
+
+            While idrConsultaSqlLogin.Read() 'MIENTRAS EL AMIGUITO LEE...
+                'ASIGNAMOS LOS DATOOOS. LAS VARIABLES ESTAN EN MODVARIABLES ¬_¬
                 sLogin = idrConsultaSqlLogin("login_acceso")
                 sClave = idrConsultaSqlLogin("clave_acceso")
-                icodigo_Usuario = idrConsultaSqlLogin("codigo_usuario_usuario")
+                iCodigo_Usuario = idrConsultaSqlLogin("codigo_usuario_usuario")
                 sTipo_Usuario = idrConsultaSqlLogin("nivel_acceso")
             End While
 
+            'SI ESTA BIEN EL USUARIO Y LA CONTRASEÑA...
             If sLogin = txtUsuario.Text And sClave = txtClave.Text Then
+                'LE DAMOS PLAY BABY!
                 frmMenu.Visible = True
                 Me.Visible = False
-            Else
+            Else 'SI NO...
                 MessageBox.Show("Datos invalidos. Asegurese de que introduce los datos correctos")
                 If txtUsuario.Text = "" Then
-                    txtUsuario.Focus()
+                    txtUsuario.Focus() 'ENFOCAMOS LO QUE PUEDA FALTAR
                 Else
-                    txtClave.Focus()
+                    txtClave.Focus() 'LO DE ARRIBA
                 End If
             End If
         Catch ex As MySqlException
-            MessageBox.Show("Error! " & ex.Message.ToString)
+            MessageBox.Show("Error! " & ex.Message.ToString) 'POR EL AMOR DE DIOS, QUE NO TENGA QUE SALIR ESTO!
         End Try
 
     End Sub
 
+    'CLICK EN SALIR
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Me.Close()
-    End Sub
-
-    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub UsernameLabel_Click(sender As Object, e As EventArgs) Handles UsernameLabel.Click
-
-    End Sub
-
-    Private Sub LogoPictureBox_Click(sender As Object, e As EventArgs) Handles LogoPictureBox.Click
-
+        Me.Close() 'CERRAMOS
     End Sub
 End Class
