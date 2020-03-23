@@ -56,33 +56,33 @@ Public Class frmVendedores
                 estado = idrConsultaSqlConsultar("estado_vendedor")
             End While
             If codigo = txtVendCodigo.Text And sLocation IsNot "Vendedores-Grabar" Then
-                    txtVendCodigo.Text = codigo
-                    txtVendNombre.Text = nombre
-                    txtVendApellido.Text = apellido
-                    txtVendSexo.Text = sexo
-                    txtVendEdoCivil.Text = edoCivil
-                    txtVendCargo.Text = cargo
-                    txtVendCedula.Text = cedula
-                    txtVendTfl.Text = tlf
-                    txtVendCorreo.Text = correo
-                    txtVendCelular.Text = celular
-                    txtVendDireccion.Text = direccion
-                    txtVendCiudad.Text = ciudad
-                    txtVendEstado.Text = estado
+                txtVendCodigo.Text = codigo
+                txtVendNombre.Text = nombre
+                txtVendApellido.Text = apellido
+                txtVendSexo.Text = sexo
+                txtVendEdoCivil.Text = edoCivil
+                txtVendCargo.Text = cargo
+                txtVendCedula.Text = cedula
+                txtVendTfl.Text = tlf
+                txtVendCorreo.Text = correo
+                txtVendCelular.Text = celular
+                txtVendDireccion.Text = direccion
+                txtVendCiudad.Text = ciudad
+                txtVendEstado.Text = estado
 
-                    If sLocation = "Vendedores-Actualizar" Then
-                        fFormularios.fOcultar(Me, True)
-                    End If
-                ElseIf sLocation = "Vendedores-Grabar" Then
-                    If txtVendCodigo.Text = codigo Then
-                        MessageBox.Show("Vendedor ya registrado")
-                    Else
-                        MessageBox.Show("Codigo Disponible")
-                        fFormularios.fOcultar(Me, True)
-                    End If
-                Else
-                    MessageBox.Show("Vendedor no encontrado")
+                If sLocation = "Vendedores-Actualizar" Then
+                    fFormularios.fOcultar(Me, True)
                 End If
+            ElseIf sLocation = "Vendedores-Grabar" Then
+                If txtVendCodigo.Text = codigo Then
+                    MessageBox.Show("Vendedor ya registrado")
+                Else
+                    MessageBox.Show("Codigo Disponible")
+                    fFormularios.fOcultar(Me, True)
+                End If
+            Else
+                MessageBox.Show("Vendedor no encontrado")
+            End If
 
         Catch ex As MySqlException
             MessageBox.Show("Error!" & ex.Message.ToString)
@@ -95,3 +95,5 @@ Public Class frmVendedores
         Me.Close()
     End Sub
 End Class
+
+'HECHO POR JUAN CURVELO Y ANGEL ARANGUREN!

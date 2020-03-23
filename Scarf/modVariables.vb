@@ -15,3 +15,6 @@ Module modVariables
     'DATAREADRES. OSEA, LEE DATOS, SEGÚN
     Friend idrConsultaSqlLogin, idrConsultaSqlConsultar, idrConsultaSqlAgregar, idrConsultaSqlEliminar, idrConsultaSqlActualizar As System.Data.IDataReader
 End Module
+
+
+'HECHO POR JUAN CURVELO Y ANGEL ARANGUREN!

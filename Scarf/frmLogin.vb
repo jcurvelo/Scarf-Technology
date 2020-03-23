@@ -51,3 +51,5 @@ Public Class frmLogin
         Me.Close() 'CERRAMOS
     End Sub
 End Class
+
+'HECHO POR JUAN CURVELO Y ANGEL ARANGUREN!
