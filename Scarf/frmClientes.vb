@@ -106,3 +106,5 @@ Public Class frmClientes
         End If
     End Sub
 End Class
+
+'HECHO POR JUAN CURVELO Y ANGEL ARANGUREN!

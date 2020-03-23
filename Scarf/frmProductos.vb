@@ -4,17 +4,6 @@ Public Class frmProductos
 
     Dim codigo, descripcion, precio, existenciaAcutal, stockMinimo, stockMaximo As String
 
-    Private Sub lbltxtCodigo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-    End Sub
-
-    Private Sub lblCodigo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
     Private Sub frmProductos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         btnConsultActu.Visible = False
         btnConsultGrab.Visible = False
@@ -90,3 +79,5 @@ Public Class frmProductos
         Me.Close()
     End Sub
 End Class
+
+'HECHO POR JUAN CURVELO Y ANGEL ARANGUREN!

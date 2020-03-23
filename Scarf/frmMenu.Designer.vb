@@ -40,6 +40,7 @@ Partial Class frmMenu
         Me.btnClientElim = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.mnuOpcionesSistema.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,25 +63,25 @@ Partial Class frmMenu
         'btnProdConsult
         '
         Me.btnProdConsult.Name = "btnProdConsult"
-        Me.btnProdConsult.Size = New System.Drawing.Size(180, 22)
+        Me.btnProdConsult.Size = New System.Drawing.Size(126, 22)
         Me.btnProdConsult.Text = "Consultar"
         '
         'btnProdAgr
         '
         Me.btnProdAgr.Name = "btnProdAgr"
-        Me.btnProdAgr.Size = New System.Drawing.Size(180, 22)
+        Me.btnProdAgr.Size = New System.Drawing.Size(126, 22)
         Me.btnProdAgr.Text = "Agregar"
         '
         'btnProdModif
         '
         Me.btnProdModif.Name = "btnProdModif"
-        Me.btnProdModif.Size = New System.Drawing.Size(180, 22)
+        Me.btnProdModif.Size = New System.Drawing.Size(126, 22)
         Me.btnProdModif.Text = "Actualizar"
         '
         'btnProdElim
         '
         Me.btnProdElim.Name = "btnProdElim"
-        Me.btnProdElim.Size = New System.Drawing.Size(180, 22)
+        Me.btnProdElim.Size = New System.Drawing.Size(126, 22)
         Me.btnProdElim.Text = "Eliminar"
         '
         'VendedoresToolStripMenuItem
@@ -93,25 +94,25 @@ Partial Class frmMenu
         'btnVendConsult
         '
         Me.btnVendConsult.Name = "btnVendConsult"
-        Me.btnVendConsult.Size = New System.Drawing.Size(180, 22)
+        Me.btnVendConsult.Size = New System.Drawing.Size(126, 22)
         Me.btnVendConsult.Text = "Consultar"
         '
         'btnVendAgr
         '
         Me.btnVendAgr.Name = "btnVendAgr"
-        Me.btnVendAgr.Size = New System.Drawing.Size(180, 22)
+        Me.btnVendAgr.Size = New System.Drawing.Size(126, 22)
         Me.btnVendAgr.Text = "Agregar"
         '
         'btnVendModif
         '
         Me.btnVendModif.Name = "btnVendModif"
-        Me.btnVendModif.Size = New System.Drawing.Size(180, 22)
+        Me.btnVendModif.Size = New System.Drawing.Size(126, 22)
         Me.btnVendModif.Text = "Actualizar"
         '
         'btnVendElim
         '
         Me.btnVendElim.Name = "btnVendElim"
-        Me.btnVendElim.Size = New System.Drawing.Size(180, 22)
+        Me.btnVendElim.Size = New System.Drawing.Size(126, 22)
         Me.btnVendElim.Text = "Eliminar"
         '
         'ClientesToolStripMenuItem
@@ -124,25 +125,25 @@ Partial Class frmMenu
         'btnClientConsult
         '
         Me.btnClientConsult.Name = "btnClientConsult"
-        Me.btnClientConsult.Size = New System.Drawing.Size(180, 22)
+        Me.btnClientConsult.Size = New System.Drawing.Size(126, 22)
         Me.btnClientConsult.Text = "Consultar"
         '
         'btnClientAgr
         '
         Me.btnClientAgr.Name = "btnClientAgr"
-        Me.btnClientAgr.Size = New System.Drawing.Size(180, 22)
+        Me.btnClientAgr.Size = New System.Drawing.Size(126, 22)
         Me.btnClientAgr.Text = "Agregar"
         '
         'btnClientModif
         '
         Me.btnClientModif.Name = "btnClientModif"
-        Me.btnClientModif.Size = New System.Drawing.Size(180, 22)
+        Me.btnClientModif.Size = New System.Drawing.Size(126, 22)
         Me.btnClientModif.Text = "Actualizar"
         '
         'btnClientElim
         '
         Me.btnClientElim.Name = "btnClientElim"
-        Me.btnClientElim.Size = New System.Drawing.Size(180, 22)
+        Me.btnClientElim.Size = New System.Drawing.Size(126, 22)
         Me.btnClientElim.Text = "Eliminar"
         '
         'btnCerrarSesion
@@ -159,17 +160,28 @@ Partial Class frmMenu
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Fugaz One", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.lblTitulo.Location = New System.Drawing.Point(98, 164)
+        Me.lblTitulo.Location = New System.Drawing.Point(69, 163)
         Me.lblTitulo.Name = "lblTitulo"
         Me.lblTitulo.Size = New System.Drawing.Size(609, 94)
         Me.lblTitulo.TabIndex = 2
         Me.lblTitulo.Text = "Scraf Technology"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(172, 281)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(396, 25)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Por Juan Curvelo y Angel Aranguren"
         '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.btnCerrarSesion)
         Me.Controls.Add(Me.mnuOpcionesSistema)
@@ -201,4 +213,5 @@ Partial Class frmMenu
     Friend WithEvents btnClientElim As ToolStripMenuItem
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents lblTitulo As Label
+    Friend WithEvents Label1 As Label
 End Class
