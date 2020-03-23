@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmProductos
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmProductos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtConsultStockMax = New System.Windows.Forms.TextBox()
         Me.txtConsultDescripcion = New System.Windows.Forms.TextBox()
@@ -40,12 +40,11 @@ Partial Class frmProductos
         Me.lblPrecio = New System.Windows.Forms.Label()
         Me.lblDescripcion = New System.Windows.Forms.Label()
         Me.lblCodigo = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtConsultStockMax
         '
-        Me.txtConsultStockMax.Location = New System.Drawing.Point(452, 183)
+        Me.txtConsultStockMax.Location = New System.Drawing.Point(145, 241)
         Me.txtConsultStockMax.Name = "txtConsultStockMax"
         Me.txtConsultStockMax.Size = New System.Drawing.Size(100, 20)
         Me.txtConsultStockMax.TabIndex = 102
@@ -66,14 +65,14 @@ Partial Class frmProductos
         '
         'txtConsultStockMin
         '
-        Me.txtConsultStockMin.Location = New System.Drawing.Point(452, 234)
+        Me.txtConsultStockMin.Location = New System.Drawing.Point(145, 292)
         Me.txtConsultStockMin.Name = "txtConsultStockMin"
         Me.txtConsultStockMin.Size = New System.Drawing.Size(100, 20)
         Me.txtConsultStockMin.TabIndex = 99
         '
         'txtConsultStockAct
         '
-        Me.txtConsultStockAct.Location = New System.Drawing.Point(452, 208)
+        Me.txtConsultStockAct.Location = New System.Drawing.Point(145, 266)
         Me.txtConsultStockAct.Name = "txtConsultStockAct"
         Me.txtConsultStockAct.Size = New System.Drawing.Size(100, 20)
         Me.txtConsultStockAct.TabIndex = 98
@@ -90,19 +89,19 @@ Partial Class frmProductos
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Impact", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label3.Location = New System.Drawing.Point(146, 30)
+        Me.Label3.Location = New System.Drawing.Point(178, 34)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(407, 60)
+        Me.Label3.Size = New System.Drawing.Size(237, 60)
         Me.Label3.TabIndex = 96
-        Me.Label3.Text = "Consulta Producto"
+        Me.Label3.Text = "Productos"
         '
         'btnConsultActu
         '
         Me.btnConsultActu.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnConsultActu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConsultActu.Location = New System.Drawing.Point(196, 321)
+        Me.btnConsultActu.Location = New System.Drawing.Point(281, 220)
         Me.btnConsultActu.Name = "btnConsultActu"
-        Me.btnConsultActu.Size = New System.Drawing.Size(142, 40)
+        Me.btnConsultActu.Size = New System.Drawing.Size(298, 40)
         Me.btnConsultActu.TabIndex = 95
         Me.btnConsultActu.Text = "Actualizar"
         Me.btnConsultActu.UseVisualStyleBackColor = False
@@ -123,9 +122,9 @@ Partial Class frmProductos
         Me.btnConsultElim.BackColor = System.Drawing.Color.Crimson
         Me.btnConsultElim.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConsultElim.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnConsultElim.Location = New System.Drawing.Point(440, 322)
+        Me.btnConsultElim.Location = New System.Drawing.Point(280, 221)
         Me.btnConsultElim.Name = "btnConsultElim"
-        Me.btnConsultElim.Size = New System.Drawing.Size(143, 40)
+        Me.btnConsultElim.Size = New System.Drawing.Size(299, 40)
         Me.btnConsultElim.TabIndex = 93
         Me.btnConsultElim.Text = "Eliminar"
         Me.btnConsultElim.UseVisualStyleBackColor = False
@@ -144,9 +143,9 @@ Partial Class frmProductos
         Me.btnConsultGrab.BackColor = System.Drawing.Color.Gold
         Me.btnConsultGrab.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConsultGrab.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnConsultGrab.Location = New System.Drawing.Point(26, 355)
+        Me.btnConsultGrab.Location = New System.Drawing.Point(279, 221)
         Me.btnConsultGrab.Name = "btnConsultGrab"
-        Me.btnConsultGrab.Size = New System.Drawing.Size(143, 40)
+        Me.btnConsultGrab.Size = New System.Drawing.Size(299, 40)
         Me.btnConsultGrab.TabIndex = 91
         Me.btnConsultGrab.Text = "Grabar"
         Me.btnConsultGrab.UseVisualStyleBackColor = False
@@ -155,7 +154,7 @@ Partial Class frmProductos
         '
         Me.lblMaximo.AutoSize = True
         Me.lblMaximo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMaximo.Location = New System.Drawing.Point(334, 183)
+        Me.lblMaximo.Location = New System.Drawing.Point(27, 241)
         Me.lblMaximo.Name = "lblMaximo"
         Me.lblMaximo.Size = New System.Drawing.Size(112, 20)
         Me.lblMaximo.TabIndex = 90
@@ -165,7 +164,7 @@ Partial Class frmProductos
         '
         Me.lblMinimo.AutoSize = True
         Me.lblMinimo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMinimo.Location = New System.Drawing.Point(337, 237)
+        Me.lblMinimo.Location = New System.Drawing.Point(30, 295)
         Me.lblMinimo.Name = "lblMinimo"
         Me.lblMinimo.Size = New System.Drawing.Size(108, 20)
         Me.lblMinimo.TabIndex = 89
@@ -175,7 +174,7 @@ Partial Class frmProductos
         '
         Me.lblActual.AutoSize = True
         Me.lblActual.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblActual.Location = New System.Drawing.Point(312, 208)
+        Me.lblActual.Location = New System.Drawing.Point(5, 266)
         Me.lblActual.Name = "lblActual"
         Me.lblActual.Size = New System.Drawing.Size(134, 20)
         Me.lblActual.TabIndex = 88
@@ -211,22 +210,12 @@ Partial Class frmProductos
         Me.lblCodigo.TabIndex = 85
         Me.lblCodigo.Text = "Código:"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(564, 384)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(104, 23)
-        Me.Button4.TabIndex = 124
-        Me.Button4.Text = "Salir"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'frmProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(680, 412)
-        Me.Controls.Add(Me.Button4)
+        Me.ClientSize = New System.Drawing.Size(603, 350)
         Me.Controls.Add(Me.txtConsultStockMax)
         Me.Controls.Add(Me.txtConsultDescripcion)
         Me.Controls.Add(Me.txtConsultPrecio)
@@ -269,5 +258,4 @@ Partial Class frmProductos
     Friend WithEvents lblPrecio As System.Windows.Forms.Label
     Friend WithEvents lblDescripcion As System.Windows.Forms.Label
     Friend WithEvents lblCodigo As System.Windows.Forms.Label
-    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

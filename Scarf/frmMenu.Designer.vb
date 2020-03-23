@@ -75,7 +75,7 @@ Partial Class frmMenu
         '
         Me.btnProdModif.Name = "btnProdModif"
         Me.btnProdModif.Size = New System.Drawing.Size(180, 22)
-        Me.btnProdModif.Text = "Modificar"
+        Me.btnProdModif.Text = "Actualizar"
         '
         'btnProdElim
         '
@@ -93,25 +93,25 @@ Partial Class frmMenu
         'btnVendConsult
         '
         Me.btnVendConsult.Name = "btnVendConsult"
-        Me.btnVendConsult.Size = New System.Drawing.Size(125, 22)
+        Me.btnVendConsult.Size = New System.Drawing.Size(180, 22)
         Me.btnVendConsult.Text = "Consultar"
         '
         'btnVendAgr
         '
         Me.btnVendAgr.Name = "btnVendAgr"
-        Me.btnVendAgr.Size = New System.Drawing.Size(125, 22)
+        Me.btnVendAgr.Size = New System.Drawing.Size(180, 22)
         Me.btnVendAgr.Text = "Agregar"
         '
         'btnVendModif
         '
         Me.btnVendModif.Name = "btnVendModif"
-        Me.btnVendModif.Size = New System.Drawing.Size(125, 22)
-        Me.btnVendModif.Text = "Modificar"
+        Me.btnVendModif.Size = New System.Drawing.Size(180, 22)
+        Me.btnVendModif.Text = "Actualizar"
         '
         'btnVendElim
         '
         Me.btnVendElim.Name = "btnVendElim"
-        Me.btnVendElim.Size = New System.Drawing.Size(125, 22)
+        Me.btnVendElim.Size = New System.Drawing.Size(180, 22)
         Me.btnVendElim.Text = "Eliminar"
         '
         'ClientesToolStripMenuItem
@@ -124,25 +124,25 @@ Partial Class frmMenu
         'btnClientConsult
         '
         Me.btnClientConsult.Name = "btnClientConsult"
-        Me.btnClientConsult.Size = New System.Drawing.Size(125, 22)
+        Me.btnClientConsult.Size = New System.Drawing.Size(180, 22)
         Me.btnClientConsult.Text = "Consultar"
         '
         'btnClientAgr
         '
         Me.btnClientAgr.Name = "btnClientAgr"
-        Me.btnClientAgr.Size = New System.Drawing.Size(125, 22)
+        Me.btnClientAgr.Size = New System.Drawing.Size(180, 22)
         Me.btnClientAgr.Text = "Agregar"
         '
         'btnClientModif
         '
         Me.btnClientModif.Name = "btnClientModif"
-        Me.btnClientModif.Size = New System.Drawing.Size(125, 22)
-        Me.btnClientModif.Text = "Modificar"
+        Me.btnClientModif.Size = New System.Drawing.Size(180, 22)
+        Me.btnClientModif.Text = "Actualizar"
         '
         'btnClientElim
         '
         Me.btnClientElim.Name = "btnClientElim"
-        Me.btnClientElim.Size = New System.Drawing.Size(125, 22)
+        Me.btnClientElim.Size = New System.Drawing.Size(180, 22)
         Me.btnClientElim.Text = "Eliminar"
         '
         'btnCerrarSesion

@@ -3,7 +3,7 @@
 Public Class frmProductos
 
     Dim codigo, descripcion, precio, existenciaAcutal, stockMinimo, stockMaximo As String
-    Dim editar = habilitarEdicion
+
     Private Sub lbltxtCodigo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     End Sub
 
@@ -20,15 +20,8 @@ Public Class frmProductos
         btnConsultGrab.Visible = False
         btnConsultElim.Visible = False
 
-        Dim c As Control
+        fFormularios.fOcultar(Me, False)
 
-        If habilitarEdicion = False Then
-            For Each c In Me.Controls
-                If TypeOf c Is TextBox Then
-                    c.Enabled = False
-                End If
-            Next
-        End If
         txtConsultCodigo.Enabled = True
 
         If sLocation = "Productos-Grabar" Then
@@ -69,22 +62,14 @@ Public Class frmProductos
                 txtConsultStockMax.Text = stockMaximo
 
                 If sLocation = "Productos-Actualizar" Then
-                    For Each c In Me.Controls
-                        If TypeOf c Is TextBox Then
-                            c.Enabled = True
-                        End If
-                    Next
+                    fFormularios.fOcultar(Me, True)
                 End If
             ElseIf sLocation = "Productos-Grabar" Then
                 If txtConsultCodigo.Text = codigo Then
                     MessageBox.Show("Producto ya registrado")
                 Else
                     MessageBox.Show("Codigo Disponible")
-                    For Each c In Me.Controls
-                        If TypeOf c Is TextBox Then
-                            c.Enabled = True
-                        End If
-                    Next
+                    fFormularios.fOcultar(Me, True)
                 End If
             Else
                 MessageBox.Show("Codigo no encontrado")

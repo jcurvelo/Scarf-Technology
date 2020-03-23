@@ -20,8 +20,16 @@ Public Class frmFunciones
         End Try
     End Function
 
-    Public Function fSetVisible(item)
-        item.Visible = True
+    Public Function fOcultar(who, bol)
+        Dim c As Control
+        If bhabilitarEdicion = False Then
+            For Each c In who.Controls
+                If TypeOf c Is TextBox Then
+                    c.Enabled = bol
+                End If
+            Next
+        End If
         Return True
     End Function
+
 End Class
